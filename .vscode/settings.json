@@ -1,0 +1,25 @@
+{
+  "window.zoomLevel": 0, // 表示窗口缩小20%.
+  "editor.wordWrap": "wordWrapColumn", // 超长代码一般出现在html中, 我不喜欢html属性换行, 但是又想看到全部, 那就只能设置编辑器视觉上的换行了.
+  "editor.wordWrapColumn": 150, // 同上
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "vue", "autoFix": true }
+  ],
+
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "singleQuote": true,
+      "semi": false,
+      "eslintIntegration": true
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  /* 关闭编辑器自带保存格式化功能，此功能会用Vetur进行格式化。*/
+  "editor.formatOnSave": false
+}
